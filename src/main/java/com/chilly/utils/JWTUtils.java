@@ -9,7 +9,8 @@ import java.util.Calendar;
 import java.util.Map;
 
 /**
- * Created by Chilly Cui on 2020/9/9.
+ * 2020 12.1
+ * ktoking
  */
 public class JWTUtils {
     private static String SECRET = "token!Q@W#E$R";

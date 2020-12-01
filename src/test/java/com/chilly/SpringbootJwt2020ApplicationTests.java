@@ -41,7 +41,7 @@ class SpringbootJwt2020ApplicationTests {
     @Test
     void test() {
 //        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk2NDkxMzMsInVzZXJJZCI6MjEsInVzZXJuYW1lIjoieGlhb2NoZW4ifQ.LmTERviRHnmKpOeXO0f9K2nR1C7AovGfAV6Fmx7tcw0";
-        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTk2NTEzOTgsInVzZXJJZCI6MjEsInVzZXJuYW1lIjoieGlhb2NoZW4ifQ.KgJhjqs0T2WCijB9MDJQE9pCoKaC_eO3H6ILDmrhz1A";
+        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDY4MTYxNzksInVzZXJJZCI6MjEsInVzZXJuYW1lIjoieGlhb2NoZW4ifQ.h1yaTia3FcTjULAc8Xlfa4M3yD-E7z47lcKc7mNw9CM";
 
         JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256("!Q@W#E$R")).build();
         DecodedJWT decodedJWT = jwtVerifier.verify(token);
@@ -50,8 +50,8 @@ class SpringbootJwt2020ApplicationTests {
         System.out.println("过期时间：" + decodedJWT.getExpiresAt());
 
 //        用户Id：21
-//        用户名：com.auth0.jwt.impl.JsonNodeClaim@236e3f4e
-//        过期时间：Wed Sep 09 19:36:38 CST 2020
+//        用户名：com.auth0.jwt.impl.JsonNodeClaim@1381794
+//        过期时间：Tue Dec 01 17:49:39 CST 2020
 
     }
 
